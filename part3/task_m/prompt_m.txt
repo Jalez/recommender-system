@@ -1,0 +1,7 @@
+Explain in detail why the diversity-promoting method works well for sequential group recommendations. Discuss:
+
+- How it balances relevance and diversity.
+- The impact on user engagement and satisfaction.
+- Any trade-offs or limitations.
+
+Include references to relevant literature if applicable.

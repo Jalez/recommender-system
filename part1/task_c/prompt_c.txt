@@ -1,0 +1,8 @@
+Using the user-based collaborative filtering approach, implement a prediction function in Python that predicts a user's rating for a specific movie. The function should:
+
+- Use the similarities calculated from the Pearson correlation function.
+- Compute the weighted average of ratings from similar users.
+- Accept as input the target user ID and movie ID.
+- Return the predicted rating.
+
+Include code explanations and an example of how to use the function.

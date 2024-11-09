@@ -1,0 +1,7 @@
+Implement the diversity-promoting sequential group recommendation method you designed in Task 11. The implementation should:
+
+- Integrate with your existing recommendation system.
+- Adjust the recommendation list to balance diversity and relevance.
+- Provide code with explanations and examples demonstrating the method.
+
+Include comments and ensure the code is well-organized.

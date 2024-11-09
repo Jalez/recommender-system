@@ -1,0 +1,7 @@
+Design a new method in Python to produce diverse sequential group recommendations using the MovieLens 100K dataset. The method should:
+
+- Promote diversity in the recommended movies while maintaining relevance.
+- Incorporate techniques such as Maximal Marginal Relevance (MMR) or topic diversification.
+- Explain how the method works and why it is effective for sequential group recommendations.
+
+Provide detailed explanations and any assumptions made.

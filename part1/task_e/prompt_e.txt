@@ -1,0 +1,11 @@
+Implement two group recommendation aggregation methods in Python using the predictions from the user-based collaborative filtering approach:
+
+1. **Average Method**:
+   - Compute the group's rating for each movie by averaging the predicted ratings from all group members.
+   - Provide code and an example of how to generate group recommendations using this method.
+
+2. **Least Misery Method**:
+   - Compute the group's rating for each movie by taking the minimum predicted rating among all group members.
+   - Provide code and an example of how to generate group recommendations using this method.
+
+Include explanations and comments in the code.

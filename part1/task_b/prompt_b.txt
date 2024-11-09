@@ -1,0 +1,7 @@
+Implement a function in Python to calculate the Pearson correlation coefficient between two users based on their movie ratings in the MovieLens 100K dataset. The function should:
+
+- Accept two user IDs as input.
+- Handle cases where users have no movies rated in common.
+- Return the similarity score between the two users.
+
+Provide the code with explanations, including any necessary data preprocessing steps.

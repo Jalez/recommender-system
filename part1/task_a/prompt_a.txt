@@ -1,0 +1,7 @@
+Using Python and relevant libraries (e.g., pandas), write code to:
+
+- Download and read the MovieLens 100K dataset files 
+- Display the first few rows of each dataset to understand their structure.
+- Count and display the number of ratings (rows) in the `u.data` file to confirm that there are 100,000 entries.
+
+Provide the code with explanations and comments for each step.

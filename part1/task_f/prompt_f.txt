@@ -1,0 +1,17 @@
+Define a metric in Python to quantify disagreements between users in a group (e.g., standard deviation of predicted ratings for each movie). Then, propose and implement a method that:
+
+- Incorporates this disagreement metric into the group recommendation process.
+- Adjusts the aggregated movie ratings to account for high disagreement levels.
+- Provides fair and satisfactory recommendations for the group.
+
+Explain why this method is useful for producing group recommendations. Include code, detailed explanations, and examples.
+
+Additionally, prepare content for a 5-slide presentation covering:
+
+- Introduction to the problem of disagreements in group recommendations.
+- The disagreement metric you defined.
+- How your method integrates the disagreement metric.
+- Results showing improved group recommendations.
+- Conclusion and potential future work.
+
+Provide the presentation content in bullet points for each slide.
