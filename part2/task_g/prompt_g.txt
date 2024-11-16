@@ -1,7 +1,0 @@
-Design a new method in Python for producing sequential group recommendations using the MovieLens 100K dataset. The method should:
-
-- Account for the sequential nature of user interactions (e.g., time-based weighting of ratings).
-- Modify existing collaborative filtering approaches to incorporate sequential information.
-- Explain the theoretical background and why this method works well for sequential group recommendations.
-
-Provide detailed explanations and any assumptions made.

@@ -1,72 +1,18 @@
-Part II: Sequential Group Recommendations
-Due: November 16, 2024
+<!-- @format -->
 
-## 1. Understanding Sequential Recommendations
+6. Explanation of Why the Method Works Well
+   Dynamic Adaptation to User Satisfaction:
 
-**Action:** Review class materials on sequential patterns in user behavior.
+By adjusting weights based on satisfaction trends, the method ensures that users who are less satisfied gain more influence in future recommendations.
+This dynamic adjustment prevents long-term dissatisfaction for any group member.
+Balancing Group and Individual Satisfaction:
 
-**Implementation:**
+The method aims to maximize overall group satisfaction while ensuring that individual preferences are not consistently overlooked.
+By considering both group preferences and individual satisfaction trends, it finds a balance between the needs of the group and its members.
+Fairness Over Time:
 
-- Identify how users' recent activities influence their current preferences.
-- Consider time-aware recommendation models.
+The method ensures that all users have the opportunity to have their preferences reflected in the group recommendations over multiple iterations.
+This is crucial in sequential settings where the same group interacts with the system repeatedly.
+Adaptability:
 
-## 2. Designing the Method (7 points)
-
-**Option 1: Incorporate Time Decay Factors**
-
-- **Action:** Assign higher weights to recent user interactions.
-- **Justification:** Reflects the evolving tastes of users over time.
-
-**Option 2: Sequential Pattern Mining**
-
-- **Action:** Use algorithms like SPADE or PrefixSpan to discover frequent sequences.
-- **Justification:** Captures common viewing patterns among users.
-
-**Option 3: Markov Chains**
-
-- **Action:** Model the probability of a user watching a movie based on previous movies.
-- **Justification:** Accounts for immediate sequential dependencies.
-
-## 3. Implementing the Method (7 points)
-
-**Action:** Choose one of the above options and implement it.
-
-**Implementation:**
-
-- Modify your collaborative filtering model to incorporate sequential data.
-- Ensure compatibility with group recommendation aggregation methods.
-
-## 4. Explanation and Clarifications (6 points)
-
-**Action:** Write a detailed explanation of your method.
-
-**Content:**
-
-- Theoretical background.
-- How the method addresses the challenges in sequential group recommendations.
-- Any assumptions or limitations.
-
-## 5. Presentation (5 points)
-
-**Slides Content:**
-
-- Overview of sequential recommendation challenges.
-- Your proposed method.
-- Implementation highlights.
-- Results and observations.
-- Conclusion.
-
-## 6. Finalizing Part II
-
-**Testing:**
-
-- Use sequences of user interactions from the dataset.
-- Demonstrate improvements over non-sequential methods.
-
-**Documentation:**
-
-- Update instructions to include any new dependencies or steps.
-
-**Submission:**
-
-- Submit all materials before November 16, 2024, at 11:00 PM.
+User preferences and satisfaction can change over time. The method adapts to these changes by updating weights and cumulative satisfaction at each iteration.
