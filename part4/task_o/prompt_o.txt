@@ -1,8 +1,0 @@
-Design a method in Python to generate counterfactual explanations for group recommendations using the MovieLens 100K dataset. The method should:
-
-- Systematically remove items from the group's previous interactions.
-- Determine if the removal affects specific recommendations.
-- Ensure explanations do not single out individual users (i.e., avoid using items only one user interacted with).
-- Prefer explanations involving items that multiple group members have interacted with.
-
-Explain the characteristics of your method and how it adheres to fairness and privacy considerations in group recommendations.

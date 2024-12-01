@@ -1,0 +1,43 @@
+1. How does your method differ from the standard approaches discussed in the course?
+Answer:
+
+Our method introduces a novel approach by using influence scores derived from the latent factors of a Non-negative Matrix Factorization (NMF) model to generate counterfactual explanations for group recommendations. Unlike standard methods that may involve retraining the recommendation model after systematically removing items, which is computationally intensive, we approximate the influence of each item without retraining. This approximation allows us to efficiently estimate the impact of each item on the group's recommendation while ensuring that the explanations are fair and focus on the group's collective behavior. This approach differs from the systematic item removal methods discussed in the course, providing a practical and scalable solution for large datasets.
+
+2. Can you explain how the influence scores are calculated and why retraining the model is not required?
+Answer:
+
+Certainly! The influence scores are calculated by leveraging the latent factors obtained from the NMF model. For each item in a group member's interaction history, we:
+
+Compute Cosine Similarity: Calculate the cosine similarity between the item's latent factors and the target item's latent factors. This measures how similar the items are in terms of their underlying features captured by the model.
+
+Weight by User's Rating: Multiply the similarity by the user's rating of the item. This step accounts for how much the user liked the item.
+
+Aggregate Influence: Sum these weighted similarities across all group members to get an influence score for each item.
+
+By using the latent factors and the user's ratings, we approximate the influence of each item on the recommendation of the target item without retraining the model. Retraining is not required because the latent factors capture the essential relationships between users and items, allowing us to estimate changes in recommendations based on these relationships.
+
+3. How does your method ensure fairness and avoid singling out individual users in the explanations?
+Answer:
+
+Our method ensures fairness by focusing on items that multiple group members have interacted with. When selecting items for the explanation, we:
+
+Aggregate Influence Across Users: We sum the influence scores for each item across all group members, emphasizing items that have a collective impact.
+
+Prioritize Common Items: We select items that have been interacted with by multiple group members, ensuring that the explanation reflects the group's shared preferences.
+
+Avoid Individual Attribution: By highlighting items with high group interaction intensity, we prevent any single user's interactions from dominating the explanation.
+
+This approach ensures that the explanations are fair and that no individual user is singled out, aligning with the goal of reflecting the group's collective responsibility for the recommendations.
+
+4. What are the limitations of approximating influence scores without retraining the model?
+Answer:
+
+While approximating influence scores without retraining offers computational efficiency, it does have some limitations:
+
+Approximation Accuracy: The influence scores are estimates and may not capture the exact impact that removing an item would have on the recommendation. This is because the model's latent factors remain unchanged.
+
+Non-linear Effects Ignored: Removing an item could have non-linear effects on the model's parameters if retrained, which our approximation does not account for.
+
+Assumption of Linear Contribution: The method assumes that the influence of an item is linearly proportional to its similarity with the target item and the user's rating, which may not capture more complex interactions.
+
+Despite these limitations, the method provides a practical balance between accuracy and computational feasibility, especially for large-scale systems where retraining is impractical.

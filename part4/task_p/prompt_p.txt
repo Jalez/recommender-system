@@ -1,7 +1,0 @@
-Implement the group counterfactual explanation method you designed in Task 15. The implementation should:
-
-- Use the group's interaction history to identify influential items.
-- Generate explanations such as "If the group had not liked items A and B, then item C would not have been recommended."
-- Ensure that explanations are fair and group-centric.
-
-Provide code with explanations, examples, and comments.
